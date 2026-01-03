@@ -4,3 +4,4 @@ from .core import (
     LaplacianPyramidOnBias,
     LaplacianPyramidOnInput,
 )
+from losses.laplacian_pyramid import laplacian_pyramid_loss
