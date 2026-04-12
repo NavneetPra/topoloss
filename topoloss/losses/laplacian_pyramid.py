@@ -69,6 +69,7 @@ class LaplacianPyramid:
         factor_w,
         scale=1.0,
         interpolation: str = "bilinear",
+        custom_weight_attribute_name: Optional[Union[None, str]] = None,
     ):
         layer_name = get_name_by_layer(model=model, layer=layer)
         return cls(
@@ -77,6 +78,7 @@ class LaplacianPyramid:
             factor_h=factor_h,
             factor_w=factor_w,
             interpolation=interpolation,
+            custom_weight_attribute_name=custom_weight_attribute_name,
         )
 
 
